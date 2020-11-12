@@ -1,0 +1,2 @@
+print("Greetings, you savages")
+
