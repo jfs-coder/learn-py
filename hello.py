@@ -1,2 +1,2 @@
-print("Greetings, you savages")
+print("Greetings, coders!")
 
