@@ -17,4 +17,13 @@ print(d)
 # add conditions (modulo example here)
 m = [i for i in range(100) if i % 5 == 0] # will print out 0, 5, 10, 15, ... 95
 print(m)
+# also works for dictionaries
+dct = {i:0 for i in range(10) if i % 2 == 0} # will populate dict with all even numbers between 0-10
+print(dct)
+# and sets
+st = {i for i in range(60) if i % 3 == 0} # will populate set with all modulo results
+print(st)
+# dont forget tuples
+tp = tuple(i for i in range(40) if i % 4 == 0)
+print(tp)
 
