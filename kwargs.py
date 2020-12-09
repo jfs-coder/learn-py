@@ -33,7 +33,7 @@ sep()
 disp(**{'x': 5, 'y': 6}) # dicts need two * asterisks
 sep()
 disp(**{'y': 6, 'x': 5}) # order of keys doesn't matter
-
+sep()
 def func(*args, **kwargs):
     print(args, kwargs) 
     print(*args)
@@ -41,6 +41,16 @@ def func(*args, **kwargs):
     # print(**kwargs)  <- doesn't work 
 
 func(1,2,3,4,5, one=0, two=1)
+sep()
+# works with dicts too, just needs two asterisks to access
+
+def show(x, y):
+    print(x, y)
+
+dt = {'x': 8, 'y': 9}
+
+show(**dt)  # dicts need two asterisks
+sep()
 
 
 
